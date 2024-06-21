@@ -1,4 +1,3 @@
-import React from "react";
 import { Session } from "./models";
 
 type SessionsProps = {
@@ -8,9 +7,9 @@ type SessionsProps = {
 const Sessions: React.FC<SessionsProps> = ({ sessions }) => {
   return (
     <div className="p-4">
-      <h2 className="text-3xl font-bold mb-10 mt-5 text-center text-[#3369FF]">
+      <p className="text-3xl font-bold mb-10 mt-5 text-center text-[#3369FF]">
         Sessions
-      </h2>
+      </p>
       <ul className="flex  justify-center items-center  gap-10 flex-wrap text-[#6E6E6E]">
         {/* {sessions.map((session) => (
           <li

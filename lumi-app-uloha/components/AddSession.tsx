@@ -24,7 +24,7 @@ const AddSession: React.FC<AddSessionProps> = ({ onAddSession }) => {
   const handleAddSession = () => {
     const selectedClient = clients.find((c) => c.id === clientId);
     const selectedProduct = products.find((p) => p.id === productId);
-    console.log(selectedClient, selectedProduct);
+    // console.log(selectedClient, selectedProduct);
 
     if (selectedClient && selectedProduct) {
       const newSession: Session = {
@@ -41,7 +41,7 @@ const AddSession: React.FC<AddSessionProps> = ({ onAddSession }) => {
         location: selectedClient.locationPreference,
         generateInvoice: selectedClient.generateInvoices,
       };
-      console.log(newSession);
+      // console.log(newSession);
       onAddSession(newSession);
       setDate(new Date().toISOString().slice(0, 16));
     }
@@ -52,9 +52,9 @@ const AddSession: React.FC<AddSessionProps> = ({ onAddSession }) => {
       <Card className=" sm:w-[350px] w-[300px]">
         <CardHeader>
           <CardTitle>
-            <h2 className="text-2xl font-bold mb-4 text-center text-[#3369FF]">
+            <p className="text-2xl font-bold mb-4 text-center text-[#3369FF]">
               Add Session
-            </h2>
+            </p>
           </CardTitle>
         </CardHeader>
         <CardContent>

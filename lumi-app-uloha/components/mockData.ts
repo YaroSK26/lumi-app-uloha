@@ -2,9 +2,6 @@ import {
   Client,
   Product,
   Session,
-  PaymentMethod,
-  PaymentFinalization,
-  Location,
 } from "./models";
 
 export const clients: Client[] = [
