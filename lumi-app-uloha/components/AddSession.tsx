@@ -105,7 +105,7 @@ const AddSession: React.FC<AddSessionProps> = ({ onAddSession }) => {
             <button
               type="button"
               onClick={handleAddSession}
-              className="px-4 w-full py-2 hover-bg  text-white rounded-3xl"
+              className="px-4 shadows w-full py-2 hover-bg  text-white rounded-3xl"
             >
               Add Session
             </button>

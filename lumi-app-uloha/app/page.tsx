@@ -29,7 +29,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <nav className="fixed border-b-2 w-full h-[80px] flex items-center bg-white border-b-[#3369FF]">
+      <nav className="fixed border-b-2 w-full h-[80px] flex items-center z-10 bg-white border-b-[#3369FF]">
         <img src="/logo.webp" alt="" />
       </nav>
       <div className="min-h-screen flex justify-center items-center flex-col pt-32 bg-gray-100 p-4">
